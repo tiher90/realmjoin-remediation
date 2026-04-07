@@ -20,7 +20,12 @@ try {
     # Check USB Peripheral Power Drain registry key
     $registryUSB = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\USB\AutomaticSurpriseRemoval" -ErrorAction SilentlyContinue
 
-    if (($null -eq $registryUSB) -or ($registryUSB.AttemptRecoveryFromUsbPowerDrain -ne 0)) {
+    if ($null -eq $registryUSB) {
+        Write-Host "USB Peripheral Power Drain registry key was not found: HKLM:\SYSTEM\CurrentControlSet\Control\USB\AutomaticSurpriseRemoval."
+        exit 1
+    }
+
+    if ($registryUSB.AttemptRecoveryFromUsbPowerDrain -ne 0) {
         Write-Host "USB Peripheral Power Drain is set to: $($registryUSB.AttemptRecoveryFromUsbPowerDrain)."
         exit 1
     }
