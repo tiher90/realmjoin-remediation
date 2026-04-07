@@ -21,7 +21,7 @@ try {
     $registryUSB = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\USB\AutomaticSurpriseRemoval" -ErrorAction SilentlyContinue
 
     if ($null -eq $registryUSB) {
-        Write-Host "USB Peripheral Power Drain registry key was not found: HKLM:\SYSTEM\CurrentControlSet\Control\USB\AutomaticSurpriseRemoval."
+        Write-Host "USB Peripheral Power Drain registry key not found."
         exit 1
     }
 
