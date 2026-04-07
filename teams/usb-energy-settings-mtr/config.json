@@ -1,0 +1,9 @@
+{
+    "name": "Fix USB energy settings on MTR devices",
+    "description": "Check and fix USB Selective Suspend and USB Peripheral Power Drain settings",
+    "type": "DetectAndRemediate",
+    "version": "1.0.0",
+    "runAsAccountType": "System",
+    "enforceSignatureCheck": false,
+    "runAs32Bit": false
+}
