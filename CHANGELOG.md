@@ -1,5 +1,8 @@
 # RealmJoin Remediation Scripts Changelog
 
+## 2026-04-07
+- Added Fix USB energy settings on MTR devices
+
 ## 2026-02-11
 - Added RemoteFX redirection for 3D peripherals for Microsoft VDI
 
