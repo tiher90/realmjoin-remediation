@@ -1,0 +1,9 @@
+{
+    "name": "Enable Windows Location Service with end-user control & Automatic Time Zone Feature",
+    "description": "Enables Windows Location Service with end-user control and the Automatic Time Zone Feature",
+    "type": "DetectAndRemediate",
+    "version": "1.0.0",
+    "runAsAccountType": "System",
+    "enforceSignatureCheck": false,
+    "runAs32Bit": false
+}
