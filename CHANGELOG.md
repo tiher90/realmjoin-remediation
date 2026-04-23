@@ -1,5 +1,11 @@
 # RealmJoin Remediation Scripts Changelog
 
+## 2026-04-23
+- Added Enable Windows Location Service with end-user control & Automatic Time Zone Feature
+
+## 2026-04-22
+- Added Fix Duplicate ProfileList SIDs
+
 ## 2026-04-07
 - Added Fix USB energy settings on MTR devices
 
